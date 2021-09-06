@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   job_01:
-     runs-on: rockylinux/rockylinux:8
+     runs-on: ubuntu-20.04
      steps:
         - run: ls -la
         - run: pwd
