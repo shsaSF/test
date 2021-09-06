@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   job_01:
-     run-on: ubuntu-lastest
+     runs-on: ubuntu-lastest
      steps:
         - run: ls -la
         - run: pwd
