@@ -9,5 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run phpstan
-        run: docker run -v `pwd`:/app -w /app ghcr.io/phpstan/phpstan analyse
-
+        run: docker run -v `pwd`:/src/php -w /src/php ghcr.io/phpstan/phpstan analyse
