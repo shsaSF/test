@@ -1,7 +1,6 @@
 name: phpstan
 
-on:
-  push:
+on: pull_request
 
 jobs:
   vanilla:
