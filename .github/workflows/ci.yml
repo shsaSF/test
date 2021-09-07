@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: pwd
-      - run: docker run -v `pwd`:/src/php -w /src/php ghcr.io/phpstan/phpstan analyse
+      - run: pwd; find  ./
+      - run: docker run --rm -v `pwd`:/app -w /app ghcr.io/phpstan/phpstan analyse /app/src/php
