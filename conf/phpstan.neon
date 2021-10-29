@@ -1,4 +1,4 @@
 parameters:
     paths:
         - ../src/php_src/
-    level: 8
+    level: 0
